@@ -16,5 +16,15 @@ namespace String_Comparer
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Validation_Result checker = new Validation_Result();
+            if(checker.ValidateUserInput(txtStringX.Text))
+            {
+                lblResult.Text
+            }
+
+        }
     }
 }
