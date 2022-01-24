@@ -20,9 +20,9 @@ namespace String_Comparer
         public bool ValidateUserInput(string userInput)
         {
             //presence check
-            if(userInput.Length == 0)
+            if (userInput.Length == 0)
             {
-                Message = "presence check failed";
+                Message = "enter a value";
                 return false;
             }
 
@@ -32,7 +32,7 @@ namespace String_Comparer
                 Message = "there should be no more than 1024 characters";
                 return false;
             }
-            
+            else return true;
         }
 
     }
